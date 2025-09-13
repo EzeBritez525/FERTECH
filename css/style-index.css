@@ -1,0 +1,119 @@
+/* Estilos para el sitio FERTECH+ */
+
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #3b4753;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.hero-section {
+  height: 110vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1510552776732-03e61cf4b144?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.hero-section .text-primary {
+  color: #0d6efd !important;
+}
+
+#modoBtn {
+  transition: background-color 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode footer p {
+  color: #f8f9fa !important;
+}
+
+.dark-mode .hero-section {
+  background-blend-mode: overlay;
+  background-color: #000000aa;
+}
+
+.dark-mode .btn-outline-light {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+}
+
+footer i {
+  margin-right: 6px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Estilos para el link que lleva a instagram*/
+  a.instagram-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem; /* igual que fs-5 */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* espacio entre ícono y texto */
+  }
+
+  /* Ícono azul por defecto */
+  a.instagram-link i {
+    color: #0d6efd; /* azul */
+    cursor: pointer;
+  }
+
+  /* Texto blanco por defecto */
+  a.instagram-link .ig-text {
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Cuando el mouse está sobre el ícono SOLO cambia el color del ícono */
+  a.instagram-link i:hover {
+    color: orange !important;
+  }
+
+  /* Cuando el mouse está sobre el texto SOLO cambia el color del texto */
+  a.instagram-link .ig-text:hover {
+    color: orange !important;
+  }
+

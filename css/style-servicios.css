@@ -1,0 +1,116 @@
+/* Estilos específicos para servicios */
+
+main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.accordion-button {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#imagenServicio img {
+  max-width: 100%;
+  transition: 0.3s ease;
+  border: 3px solid #0d6efd;
+}
+
+/* Modos Claro y Oscuro */
+
+/* Estilos para el modo claro */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #3b4753;
+}
+
+body.light-mode h1 {
+  color: #0d6efd;
+}
+
+body.light-mode .accordion-button {
+  background-color: #fff;
+  color: #0d6efd;
+  border: 1px solid #ddd;
+}
+
+body.light-mode .accordion-button:hover {
+  background-color: #f1f1f1;
+}
+
+body.light-mode #imagenServicio img {
+  border: 3px solid #0d6efd;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode .accordion-button {
+  background-color: #333;
+  color: #f8f9fa;
+  border: 1px solid #444;
+}
+
+body.dark-mode .accordion-button:hover {
+  background-color: #444;
+}
+
+body.dark-mode #imagenServicio img {
+  border: 3px solid #f8f9fa;
+}
+
+/*Estilos para el link que lleva a instagram*/
+a.instagram-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  /* igual que fs-5 */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* espacio entre ícono y texto */
+}
+
+/* Ícono azul por defecto */
+a.instagram-link i {
+  color: #0d6efd;
+  /* azul */
+  cursor: pointer;
+}
+
+/* Texto blanco por defecto */
+a.instagram-link .ig-text {
+  color: white;
+  cursor: pointer;
+}
+
+/* Cuando el mouse está sobre el ícono SOLO cambia el color del ícono */
+a.instagram-link i:hover {
+  color: orange !important;
+}
+
+/* Cuando el mouse está sobre el texto SOLO cambia el color del texto */
+a.instagram-link .ig-text:hover {
+  color: orange !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
